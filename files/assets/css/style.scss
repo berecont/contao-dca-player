@@ -1,0 +1,43 @@
+.content-youtube,
+.content-video,
+.content-player {
+
+    figure {
+        position: relative;
+        width: 100%;
+        height: 100%;    
+        background-color: #000;    
+    }
+
+    &.aspect.aspect--16-9,
+    &.aspect--16-9,
+    .aspect--16-9 {
+        aspect-ratio: 16 / 9;
+    }
+
+    &.aspect.aspect--9-16,
+    &.aspect--9-16,
+    .aspect--9-16 {
+        aspect-ratio: 9 / 16;
+    }    
+
+    &.aspect.aspect--4-3,
+    &.aspect---4-3,
+    .aspect--4-3 {
+        aspect-ratio: 4 / 3;
+    }     
+
+    &.aspect.aspect--3-4,
+    &.aspect--3-4,
+    .aspect--3-4 {
+        aspect-ratio: 3 / 4;
+    }     
+
+    iframe,
+    video {
+        position: absolute;
+        inset: 0;
+        width: 100% !important;
+        height: 100% !important;
+    }
+}
