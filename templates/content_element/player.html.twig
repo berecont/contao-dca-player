@@ -1,0 +1,12 @@
+{% extends "@Contao/content_element/player.html.twig" %}
+
+{% block attributes %}
+  {% set aspectClass = 'aspect--' ~ data.playerAspect|replace({':': '-'}) %}
+
+  {% set attributes = attributes
+    .addClass('aspect')
+    .addClass(aspectClass)
+  %}
+
+  {{ parent() }}
+{% endblock %}
